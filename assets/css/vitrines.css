@@ -1,0 +1,238 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #090909;
+    color: #e5d8aa;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    min-height: 100vh;
+}
+
+.container-corpo {
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+    align-items: start;
+    padding: 40px 20px;
+}
+
+.conteudo-corpo-esquerdo {
+
+    width: 34%;
+    min-height: 1000px;
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-right: 4px solid var(--titulos);
+    position: relative;
+}
+
+.conteudo-corpo-esquerdo h1 {
+    margin: 0;
+}
+
+.conteudo-corpo-direita {
+
+    width: 60%;
+    height: auto;
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+
+        margin: 0px 0px 10px 0px;
+    }
+}
+
+.primeiro-textos-esquerda,
+.segundo-textos-esquerda,
+.terceiro-textos-esquerda {
+
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    position: relative;
+}
+
+.bola {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: calc(100% + 30px);
+    top: calc(100% + -141px);
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: var(--titulos);
+    box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.15);
+}
+
+.bola-dois {
+
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: calc(100% + 30px);
+    top: calc(100% + 181px);
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: rgb(71, 71, 82);
+    box-shadow: 0 0 0 6px rgba(63, 63, 63, 0.15);
+}
+
+.bola-tres {
+
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: calc(100% + 30px);
+    top: calc(100% + 14px);
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: var(--titulos);
+    box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.15);
+}
+
+.img-selecao {
+
+    width: 400px;
+}
+
+.bloco-direita-um{
+
+    width: 850px;
+}
+
+.bloco-direita-dois {
+
+    margin-top: 40px;
+    
+
+    h1 {
+
+        color: rgb(82, 82, 82);
+        font-size: 24px;
+        margin-top: 20px;
+    }
+}
+
+.bloco-direita-tres {
+
+    width: 850px;
+    margin-top: 150px;
+}
+
+.img-1938 {
+
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    img {
+
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 960px) {
+    .container-corpo {
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 16px;
+    }
+
+    .conteudo-corpo-esquerdo {
+        display: none;
+    }
+
+    .conteudo-corpo-direita {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .conteudo-corpo-direita {
+        gap: 24px;
+    }
+
+    .primeiro-textos-esquerda,
+    .segundo-textos-esquerda,
+    .terceiro-textos-esquerda {
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .bola,
+    .bola-dois,
+    .bola-tres {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        margin-bottom: 14px;
+    }
+
+    .img-selecao {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 18px;
+    }
+
+    .bloco-direita-um,
+    .bloco-direita-dois,
+    .bloco-direita-tres {
+        width: 100%;
+    }
+
+    .bloco-direita-tres {
+        margin-top: 40px;
+    }
+
+    .img-1938 {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .img-1938 img {
+        width: 100%;
+        height: auto;
+        border-radius: 18px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container-corpo {
+        padding: 18px 12px;
+    }
+
+    .conteudo-corpo-esquerdo,
+    .conteudo-corpo-direita {
+        padding: 18px;
+    }
+
+    .conteudo-corpo-esquerdo h1,
+    .conteudo-corpo-direita h1 {
+        font-size: 1.8rem;
+    }
+
+    .bloco-direita-um h1,
+    .bloco-direita-dois h1,
+    .bloco-direita-tres h1 {
+        font-size: 1.5rem;
+    }
+
+    .img-1938 {
+        gap: 14px;
+    }
+}
